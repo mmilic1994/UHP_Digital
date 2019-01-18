@@ -79,6 +79,11 @@ body {
     .navbar_container_desktop .top_right {
       min-width: 15%;
       padding-left: 6rem; }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
   .banner {
     width: 100%;
     height: 100%;
@@ -126,13 +131,12 @@ body {
           background-color: #002542; }
   .services {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem; }
+    padding: 1rem 3rem 3rem 3rem; }
     .services h2 {
       display: block;
       width: 100%;
@@ -172,18 +176,22 @@ body {
           margin-top: -0.5rem;
           font-weight: 600; }
   .latest_news {
-    height: 50vh;
-    width: 100%; }
-    .latest_news .particles-js {
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    padding-top: 10rem;
+    background-color: #ebebeb; }
     .latest_news h3 {
       text-align: center;
       width: 100%;
       font-size: 25px;
       font-weight: 600;
       color: #002542;
-      line-height: 1.2; }
+      line-height: 1.2;
+      z-index: 1; }
     .latest_news .news_container {
-      width: 80%; } }
+      width: 80%;
+      z-index: 1; } }

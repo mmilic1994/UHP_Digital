@@ -122,6 +122,14 @@ body {
   }
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .banner {
   width: 100%;
   height: 100%;
@@ -186,13 +194,12 @@ body {
 
   .services {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem 3rem 3rem 3rem;
 
     h2 {
       display: block;
@@ -248,15 +255,16 @@ body {
 
   }
 
-  .latest_news{
-    height: 50vh;
-    width: 100%;
-
-    .particles-js {
+    .latest_news {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
-      z-index: -1;
-    }
+      z-index: 0;
+      padding-top: 10rem;
+      background-color: #ebebeb;
+    
 
     h3 {
       text-align: center;
@@ -265,16 +273,15 @@ body {
       font-weight: 600;
       color: $primary-color;
       line-height: 1.2;
+      z-index: 1;
     }
 
     .news_container {
       width: 80%;
-
-      
+      z-index: 1;
     }
 
   }
-
 
 }
 
