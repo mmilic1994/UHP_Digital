@@ -190,7 +190,160 @@ body {
           height: 100%; }
         .latest_news .news_right .news_top_right .news_top_right_text, .latest_news .news_right .news_top_right .news_bottom_right_text, .latest_news .news_right .news_bottom_right .news_top_right_text, .latest_news .news_right .news_bottom_right .news_bottom_right_text {
           width: 100%;
-          padding: 0.5rem; } }
+          padding: 0.5rem; }
+  .selected_references {
+    width: 100%;
+    margin-top: 4rem; }
+    .selected_references h3 {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      color: #002542;
+      font-weight: 800; }
+  .what_clients_think {
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb; }
+    .what_clients_think h3 {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      color: #002542;
+      font-weight: 800; }
+    .what_clients_think .client {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem; }
+      .what_clients_think .client .client_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .what_clients_think .client img {
+        height: 100%;
+        width: auto; }
+      .what_clients_think .client .client_text {
+        width: 100%; }
+        .what_clients_think .client .client_text p {
+          font-size: 16px;
+          color: #002542;
+          text-align: center;
+          padding-left: 1rem;
+          padding-right: 1rem; }
+  .companies {
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    .companies .company {
+      width: 50%; }
+  .work_together_bgd_mobile {
+    width: 100%;
+    background-color: #002542;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; }
+    .work_together_bgd_mobile .title {
+      width: 100%;
+      text-align: center; }
+      .work_together_bgd_mobile .title h4 {
+        color: white;
+        font-size: 2rem; }
+      .work_together_bgd_mobile .title p {
+        color: white;
+        font-size: 1rem; }
+    .work_together_bgd_mobile .button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .work_together_bgd_mobile .button p {
+        background-color: #00baff;
+        width: 261px;
+        height: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        text-transform: uppercase; }
+      .work_together_bgd_mobile .button p:hover {
+        color: #00baff;
+        background-color: white; }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    footer .footer_item {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -1rem; }
+    footer img {
+      padding-top: 1rem;
+      width: 130px; }
+    footer h5 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #00baff;
+      width: 100%;
+      text-align: center;
+      margin-bottom: -0.7rem; }
+    footer ul {
+      list-style-type: none;
+      width: 100%;
+      text-align: center;
+      padding: 0; }
+    footer p {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+    footer li {
+      font-size: 1rem;
+      color: #002542;
+      text-align: center;
+      width: 100%;
+      padding: 0.2rem; }
+    footer input {
+      width: 213px;
+      height: 40px;
+      border: 1px solid #ebebeb; }
+    footer input::placeholder {
+      font-family: "Open Sans", sans-serif;
+      color: #838383; }
+    footer button {
+      background-color: #00baff;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      border: none;
+      width: 47px;
+      height: 40px; }
+    footer button:hover {
+      background-color: white;
+      color: #00baff;
+      border: 2px solid #00baff;
+      font-weight: 800; } }
 
 @media (min-width: 1024px) {
   .navbar_container_desktop {
