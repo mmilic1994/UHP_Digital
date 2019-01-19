@@ -49,10 +49,52 @@ body {
       text-align: right;
       color: rgb(255, 255, 255);
       font-size: 2rem;
-    }
-    
+      cursor: pointer;
+    }  
   }
 
+  .dropdown_mobile {
+    display: none;
+  }
+
+  .collapsed {
+    border-top: 0.5px solid $secondary-color;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: $primary-color;
+    
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      text-align: end;
+    
+     
+      li a {
+        width: 100%;
+        padding: 1.5rem;
+        text-decoration: none;
+        font-family: $font-stack;
+        color: rgb(235, 235, 235);
+        font-size: 1.6rem;
+        font-weight: 200;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+
+
+    
   .banner {
     width: 100vw;
     height: calc(100vh - 70px);
@@ -379,6 +421,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       p {
         background-color: $secondary-color;
@@ -454,6 +497,12 @@ body {
       text-align: center;
       width: 100%;
       padding: 0.2rem;
+      cursor: pointer;
+    }
+
+    a{
+      text-decoration: none;
+      color: $primary-color;
     }
 
     input {
@@ -475,6 +524,7 @@ body {
       border: none;
       width: 47px;
       height: 40px;
+      cursor: pointer;
     }
 
     button:hover {

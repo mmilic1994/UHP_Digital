@@ -1,3 +1,9 @@
+const hamburger = document.getElementById('hamburger');
+const dropDown = document.getElementById('dropdown_mobile');
+hamburger.addEventListener('click', ()=> {
+dropDown.classList.toggle('collapsed');
+});
+
 document.addEventListener('DOMContentLoaded', ()=> {
   particlesJS("particles-js", {
     "particles": {
