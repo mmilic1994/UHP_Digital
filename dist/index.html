@@ -13,6 +13,12 @@
 
 <body>
   <header>
+    <div class="navbar_container_mobile">
+      <div class="logo">
+        <img src="./images/uhp_logo_1.png" alt="UHP Logo">
+      </div>
+      <div class="hamburger">&#9776;</div>
+    </div>
     <div class="navbar_container_desktop">
       <div class="logo">
         <div class="top_left_logo"></div>
@@ -56,64 +62,88 @@
   </header>
   <main>
     <div class="container">
-    <section class="banner">
-      <div class="banner_img"></div>
-      <div class="banner_center">
-        <h1>We are the specialists you were always looking for</h1>
-        <p>As we digitalise your business processes, you can work more efficient than ever before and provide better
-          service and product quality.</p>
-        <div class="button_container">
-          <span class="button">LET’S GO DIGITAL</span>
+      <section class="banner">
+        <div class="banner_img"></div>
+        <div class="banner_center">
+          <h1>We are the specialists you were always looking for</h1>
+          <p>As we digitalise your business processes, you can work more efficient than ever before and provide better
+            service and product quality.</p>
+          <div class="button_container">
+            <span class="button">LET’S GO DIGITAL</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="services">
-      <h2>Services</h2>
-      <div class="services_container">
-        <div class="service_item">
-          <div class="service_img"><img src="./images/web_development_img.png" alt="web development img"></div>
-          <h3>Web Development</h3>
-          <p>For providing your customers with comfortable solutions, we realise responsive frontend and complex
-            backend solutions for you, that work in all browsers and on all mobile devices.</p>
+      <section class="services">
+        <h2>Services</h2>
+        <div class="services_container">
+          <div class="service_item">
+            <div class="service_img"><img src="./images/web_development_img.png" alt="web development img"></div>
+            <h3>Web Development</h3>
+            <p>For providing your customers with comfortable solutions, we realise responsive frontend and complex
+              backend solutions for you, that work in all browsers and on all mobile devices.</p>
+          </div>
+          <div class="service_item">
+            <div class="service_img"><img src="./images/mobile_apps.png" alt="mobile apps img"></div>
+            <h3>Mobile Apps</h3>
+            <p>No matter if it is iOS, Android or a hybrid solution - we know all technologies and recommend you the
+              best
+              for your individual case.</p>
+          </div>
+          <div class="service_item">
+            <div class="service_img"><img src="./images/IT_consultancy.png" alt="IT IT_consultancy img"></div>
+            <h3>IT-Consultancy</h3>
+            <p>We show you how you can save money and time in your company while improving the quality of your products
+              and services at the same time.</p>
+          </div>
         </div>
-        <div class="service_item">
-          <div class="service_img"><img src="./images/mobile_apps.png" alt="mobile apps img"></div>
-          <h3>Mobile Apps</h3>
-          <p>No matter if it is iOS, Android or a hybrid solution - we know all technologies and recommend you the best
-            for your individual case.</p>
-        </div>
-        <div class="service_item">
-          <div class="service_img"><img src="./images/IT_consultancy.png" alt="IT IT_consultancy img"></div>
-          <h3>IT-Consultancy</h3>
-          <p>We show you how you can save money and time in your company while improving the quality of your products
-            and services at the same time.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="particles-js" class="latest_news">
-        <h3>Latest News</h3>
+      <section id="particles-js" class="latest_news">
+        <div class="latest_news_title">
+          <h3>Latest News</h3>
+        </div>
         <div class="news_container">
           <div class="news_left">
             <img src="./images/news_left.jpg" alt="news image left">
-            <h4>UHP software exibition on the IT & media 2016 in Darmstadt</h4>
-            <span class="date"> <img src="./images/date_icon.svg" alt="date icon"> February 16, 2016</span> <span class="user"><img
-                src="./images/user_icon.svg" alt="user icon"> Dominik Unzicker</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio nemo officiis placeat vero labore
-              officia saepe cupiditate, sint nisi odit veniam, tempore non voluptates voluptatum excepturi ratione
-              alias expedita!</p>
+            <div class="news_left_text">
+              <h4>UHP software exibition on the IT & media 2016 in Darmstadt</h4>
+              <img src="./images/date_icon.png" alt="date icon" class="icon"> February 16, 2016
+              <img src="./images/user_icon.png" alt="user icon" class="icon">
+              Dominik Unzicker
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio nemo officiis placeat vero labore
+                officia saepe cupiditate, sint nisi odit veniam, tempore non voluptates voluptatum excepturi ratione
+                alias expedita!</p>
+            </div>
           </div>
           <div class="news_right">
             <div class="news_top_right">
-              <img src="./images/code_img.jpg" alt="code img">
+              <div class="news_top_right_img">
+                <img src="./images/code_img.jpg" alt="code img">
+              </div>
+              <div class="news_top_right_text">
+                <h4>Hybrid Apps with the Ionic Framework</h4>
+                <span class="user"><img src="./images/user_icon.png" alt="user icon" class="icon"> Dominik Unzicker</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nemo pariatur amet deleniti
+                  reprehenderit neque ipsa cum dolorem quia, saepe quam aut rerum expedita nobis nisi tempora. Odio,
+                  harum velit?</p>
+              </div>
             </div>
             <div class="news_bottom_right">
-              <img src="./images/bottom_right_img.jpg" alt="app img">
+              <div class="news_bottom_right_img">
+                <img src="./images/app_img.png" alt="app img">
+              </div>
+              <div class="news_bottom_right_text">
+                <h4>ASIN EAN Converter to PHP</h4>
+                <span class="user"><img src="./images/user_icon.png" alt="user icon" class="icon"> Dominik Unzicker</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem amet nam, itaque inventore a
+                  consequatur excepturi? Voluptatibus id consequuntur amet beatae temporibus unde pariatur asperiores
+                  similique, autem eos fuga illum.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </section>
   </main>
   <footer></footer>
