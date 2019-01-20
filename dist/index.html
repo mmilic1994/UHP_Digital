@@ -8,13 +8,13 @@
   <title>UHP Digital</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" /> -->
   <link rel="stylesheet" type="text/css" href="../dist/css/custom.css">
+  <script src="js/particles.js"></script>
 </head>
 
 <body>
   <header>
+    <a name="top"></a>
     <div class="navbar_container_mobile">
       <div class="logo">
         <img src="./images/uhp_logo_1.png" alt="UHP Logo">
@@ -22,29 +22,29 @@
       <div id="hamburger" class="hamburger">&#9776;</div>
     </div>
     <div id="dropdown_mobile" class="dropdown_mobile">
-        <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#services">Web development</a>
-            </li>
-            <li>
-              <a href="#services">Mobile apps</a>
-            </li>
-            <li>
-              <a href="#services">IT consulting</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">About us</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#services">Web development</a>
+        </li>
+        <li>
+          <a href="#services">Mobile apps</a>
+        </li>
+        <li>
+          <a href="#services">IT consulting</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
     <div class="navbar_container_desktop">
       <div class="logo">
@@ -89,6 +89,7 @@
   </header>
   <main>
     <div class="container">
+      <a href="#top"><img src="./images/chevron-arrow-up.svg" alt="arrow up" class="arrow_up"></a>
       <section class="banner">
         <div class="banner_img"></div>
         <div class="banner_center">
@@ -127,10 +128,9 @@
         </div>
       </section>
 
-      <section id="particles-js" class="latest_news">
-        <div class="latest_news_title">
-          <h3>Latest News</h3>
-        </div>
+      <section class="latest_news">
+        <!-- <div class="particles-js" id="particles-js"></div> -->
+        <h3>Latest News</h3>
         <div class="news_container">
           <div class="news_left">
             <img src="./images/news_left.jpg" alt="news image left">
@@ -153,8 +153,7 @@
                 <h4>Hybrid Apps with the Ionic Framework</h4>
                 <span class="user"><img src="./images/user_icon.png" alt="user icon" class="icon"> Dominik Unzicker</span>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nemo pariatur amet deleniti
-                  reprehenderit neque ipsa cum dolorem quia, saepe quam aut rerum expedita nobis nisi tempora. Odio,
-                  harum velit?</p>
+                  reprehenderit neque ipsa cum dolorem quia.</p>
               </div>
             </div>
             <div class="news_bottom_right">
@@ -165,8 +164,7 @@
                 <h4>ASIN EAN Converter to PHP</h4>
                 <span class="user"><img src="./images/user_icon.png" alt="user icon" class="icon"> Dominik Unzicker</span>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem amet nam, itaque inventore a
-                  consequatur excepturi? Voluptatibus id consequuntur amet beatae temporibus unde pariatur asperiores
-                  similique, autem eos fuga illum.</p>
+                  consequatur excepturi? </p>
               </div>
             </div>
           </div>
@@ -175,55 +173,53 @@
 
       <section class="selected_references">
         <h3>Selected References</h3>
-        <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-          <div>
-            <h3>1</h3>
+        <div class="images">
+          <div class="img_container">
+            <img src="./images/slider_img1.png" alt="slider_img1">
           </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
+          <div class="img_container">
+            <img src="./images/slider_img2.png" alt="slider_img2">
           </div>
         </div>
       </section>
 
       <section class="what_clients_think">
         <h3>What Our Clients Think</h3>
-        <div class="client">
-          <div class="client_img">
-            <img src="./images/client1.png" alt="client image">
+        <div class="clients_container">
+          <div class="client">
+            <div class="client_img">
+              <img src="./images/client1.png" alt="client image">
+            </div>
+            <div class="client_text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex maxime facilis dolores voluptatum
+                numquam! Dignissimos, nihil repellendus esse numquam perspiciatis harum voluptatum dicta et velit
+                repellat, repudiandae enim explicabo!</p>
+              <p>&mdash; Lorem Ipsum, CTO, Dolorstadd Labs</p>
+            </div>
           </div>
-          <div class="client_text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex maxime facilis dolores voluptatum
-              numquam! Dignissimos, nihil repellendus esse numquam perspiciatis harum voluptatum dicta et velit
-              repellat, repudiandae enim explicabo!</p>
-            <p>&mdash; Lorem Ipsum, CTO, Dolorstadd Labs</p>
+          <div class="client">
+            <div class="client_img">
+              <img src="./images/client2.png" alt="client image">
+            </div>
+            <div class="client_text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque voluptatem qui quos
+                unde
+                inventore alias, maiores dolore natus architecto, illo aperiam aspernatur! Nulla praesentium porro qui
+                mollitia et dolorem?</p>
+              <p>&mdash; Lorem Ipsum, CTO, Dolorstadd Labs</p>
+            </div>
           </div>
-        </div>
-        <div class="client">
-          <div class="client_img">
-            <img src="./images/client2.png" alt="client image">
-          </div>
-          <div class="client_text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque voluptatem qui quos unde
-              inventore alias, maiores dolore natus architecto, illo aperiam aspernatur! Nulla praesentium porro qui
-              mollitia et dolorem?</p>
-            <p>&mdash; Lorem Ipsum, CTO, Dolorstadd Labs</p>
-          </div>
-        </div>
-        <div class="client">
-          <div class="client_img">
-            <img src="./images/client3.png" alt="client image">
-          </div>
-          <div class="client_text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quod, perferendis velit voluptate
-              corporis dolorum eius eum magnam voluptatum soluta cum, illum quam necessitatibus quos error officia quo
-              quasi! Autem.</p>
-            <p>&mdash; Lorem Ipsum, CTO, Dolorstadd Labs</p>
+          <div class="client">
+            <div class="client_img">
+              <img src="./images/client3.png" alt="client image">
+            </div>
+            <div class="client_text">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quod, perferendis velit voluptate
+                corporis dolorum eius eum magnam voluptatum soluta cum, illum quam necessitatibus quos error officia
+                quo
+                quasi! Autem.</p>
+              <p>&mdash; Lorem Ipsum, CTO, Dolorstadd Labs</p>
+            </div>
           </div>
         </div>
       </section>
@@ -256,68 +252,66 @@
       </section>
 
       <section class="lets_work_together">
-        <div class="work_together_bgd_not_mobile">
-          <div class="work_together_bgd_mobile">
-            <div class="title">
-              <h4>Let's work together</h4>
-              <p>Our expertise in technology and management bring your project to success</p>
-            </div>
-            <div class="button">
-              <p>Contact us</p>
-            </div>
+        <div class="work_together_bgd_mobile">
+          <div class="title">
+            <h4>Let's work together</h4>
+            <p>Our expertise in technology and management bring your project to success</p>
+          </div>
+          <div class="button">
+            <p>Contact us</p>
           </div>
         </div>
       </section>
     </div>
   </main>
   <footer>
-    <div class="footer_item">
-      <img src="./images/UHP_Software.png" alt="UHP_Software_logo">
-    </div>
-    <div class="footer_item">
-      <h5>Company</h5>
-      <ul>
-        <li>About us</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>Disclaimer</li>
-        <li>Privacy</li>
-        <li>Credit</li>
-      </ul>
-    </div>
-    <div class="footer_item">
-      <h5>Services</h5>
-      <ul>
-        <li>Web Development</li>
-        <li>Mobile Apps</li>
-        <li>IT Consulting</li>
-      </ul>
-    </div>
-    <div class="footer_item">
-      <h5>Contact</h5>
-      <a name="contact"></a>
-      <ul>
-        <li>UHP Software</li>
-        <li><a href="tel:+49 176 543 477 50">+49 176 543 477 50</a></li>
-        <li><a href="mailto: contact@uhp-software.com">contact@uhp-software.com</a></li>
-        <li>Heringer guideway 3</li>
-        <li>65597 Hünfelden</li>
-        <li>Germany</li>
-      </ul>
-    </div>
-    <div class="footer_item">
-      <h5>Newsletter</h5>
-      <ul>
-        <li>Stay up to date</li>
-      </ul>
-      <p>
-        <input type="text" placeholder="Enter Your Email Address"><button>OK</button>
-      </p>
+    <div class="footer_container">
+      <div class="footer_item">
+        <img src="./images/UHP_Software.png" alt="UHP_Software_logo">
+      </div>
+      <div class="footer_item">
+        <h5>Company</h5>
+        <ul>
+          <li>About us</li>
+          <li>Blog</li>
+          <li>Contact</li>
+          <li>Disclaimer</li>
+          <li>Privacy</li>
+          <li>Credit</li>
+        </ul>
+      </div>
+      <div class="footer_item">
+        <h5>Services</h5>
+        <ul>
+          <li>Web Development</li>
+          <li>Mobile Apps</li>
+          <li>IT Consulting</li>
+        </ul>
+      </div>
+      <div class="footer_item">
+        <h5>Contact</h5>
+        <a name="contact"></a>
+        <ul>
+          <li>UHP Software</li>
+          <li><a href="tel:+49 176 543 477 50">+49 176 543 477 50</a></li>
+          <li><a href="mailto: contact@uhp-software.com">contact@uhp-software.com</a></li>
+          <li>Heringer guideway 3</li>
+          <li>65597 Hünfelden</li>
+          <li>Germany</li>
+        </ul>
+      </div>
+      <div class="footer_item">
+        <h5>Newsletter</h5>
+        <ul>
+          <li>Stay up to date</li>
+        </ul>
+        <p>
+          <input type="text" placeholder="Enter Your Email Address"><button>OK</button>
+        </p>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
-  <script src="js/particles.js"></script>
-  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 </body>
 
 </html>
