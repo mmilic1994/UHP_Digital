@@ -436,7 +436,6 @@ footer {
     height: 122px; }
     .navbar_container_desktop .logo {
       width: 30%;
-      z-index: -1;
       display: flex;
       justify-content: flex-end; }
       .navbar_container_desktop .logo .top_left_logo {
@@ -451,20 +450,27 @@ footer {
       z-index: 2;
       padding-left: 2rem; }
   .navbar {
-    width: 55%;
-    margin-left: -2rem; }
+    width: 70%;
+    margin-left: -7rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
     .navbar .telephone_div_wrapper {
       width: 100%;
       display: flex;
       justify-content: flex-end;
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      justify-content: flex-start; }
       .navbar .telephone_div_wrapper .empty-div {
-        width: 60%; }
+        width: 69%; }
+      .navbar .telephone_div_wrapper .top_right_empty {
+        display: none; }
       .navbar .telephone_div_wrapper .telephone_content {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        width: 40%; }
+        width: 28%;
+        white-space: nowrap; }
         .navbar .telephone_div_wrapper .telephone_content a {
           width: 3rem; }
         .navbar .telephone_div_wrapper .telephone_content img {
@@ -475,12 +481,16 @@ footer {
           font-size: 14px;
           color: #002542; }
     .navbar ul {
+      width: 100%;
       display: flex;
-      flex-flow: row nowrap; }
+      flex-flow: row nowrap;
+      justify-content: flex-start; }
       .navbar ul li {
         list-style-type: none;
-        padding: 1rem;
-        white-space: nowrap; }
+        width: 150px;
+        white-space: nowrap;
+        text-align: center;
+        padding: 5px; }
         .navbar ul li a {
           text-decoration: none;
           text-transform: uppercase;
@@ -499,10 +509,8 @@ footer {
           margin: 0 auto;
           position: absolute;
           top: 118px;
-          width: 86px;
+          width: 136px;
           z-index: 2; }
-  .top_right {
-    min-width: 15%; }
   .banner {
     width: 100%; }
     .banner .banner_center {
@@ -655,3 +663,15 @@ footer {
       margin-top: -5rem; }
     .footer_item ul {
       margin-top: -3rem; } }
+
+@media (min-width: 1500px) {
+  .navbar .telephone_div_wrapper .empty-div {
+    flex-grow: 0;
+    width: 80%; }
+  .navbar .telephone_div_wrapper .telephone_content {
+    flex-grow: 0;
+    width: 15%; }
+  .navbar .telephone_div_wrapper .top_right_empty {
+    display: block;
+    flex-grow: 1;
+    width: 5%; } }

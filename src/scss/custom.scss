@@ -20,8 +20,6 @@ body {
 
 }
 
-  
-
 .arrow_up {
   width: 68px;
   height: 68px;
@@ -84,7 +82,6 @@ body {
       display: flex;
       flex-flow: row wrap;
       text-align: end;
-    
      
       li a {
         width: 100%;
@@ -233,7 +230,6 @@ body {
 
   }
 
-  
   .latest_news {
     display: flex;
     flex-flow: row wrap;
@@ -659,7 +655,6 @@ body {
 
   .logo {
   width: 30%;
-  z-index: -1;
   display: flex;
   justify-content: flex-end;
     
@@ -683,24 +678,34 @@ img {
 
 
 .navbar {
-      width: 55%;
-      margin-left: -2rem;
+      width: 70%;
+      margin-left: -7rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
       
       .telephone_div_wrapper {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         padding-top: 1rem;
+        justify-content: flex-start;
   
         .empty-div {
-          width: 60%;
+          width: 69%;
+        }
+
+        .top_right_empty {
+          display: none;
         }
   
         .telephone_content {
           display: flex;
           justify-content: flex-end;
           align-items: center;
-          width: 40%;
+          width: 28%;
+          white-space: nowrap;
 
         a {
           width: 3rem;
@@ -721,13 +726,18 @@ img {
       }
   
       ul {
+        width: 100%;
         display: flex;
         flex-flow: row nowrap;
+        justify-content: flex-start;
   
         li  {
         list-style-type: none;
-        padding: 1rem;
+        width: 150px;
         white-space: nowrap;
+        text-align: center;
+        padding: 5px; 
+
   
         a {
           text-decoration: none;
@@ -738,7 +748,7 @@ img {
           font-size: 15px;
           cursor: pointer;
         }
-  
+
         a:hover {
           color: $secondary-color;
         }
@@ -751,18 +761,13 @@ img {
           margin: 0 auto;
           position: absolute;
           top: 118px;
-          width: 86px;
+          width: 136px;
           z-index: 2;
       }
         }
       }
     }
   
-    .top_right {
-      min-width: 15%;
-      // padding-left: 6rem;
-    }
-
     .banner {
       width: 100%;
 
@@ -778,8 +783,6 @@ img {
         font-size: 20px;
         }
     }
-
-    
 
     .services {
           width: 100%;
@@ -998,13 +1001,29 @@ img {
               ul {
                 margin-top: -3rem;
               }
-            }
-
-          
+            } 
                 
   }
 
+  @media (min-width: 1500px) {
+    .navbar .telephone_div_wrapper {
 
+    .empty-div {
+      flex-grow: 0;
+      width: 80%;
+    }
+
+    .telephone_content {
+      flex-grow: 0;
+      width: 15%;
+    }
+    .top_right_empty {
+       display: block;
+       flex-grow: 1;
+       width: 5%
+     }
+    }
+  }
 
 
 
